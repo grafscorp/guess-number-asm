@@ -27,13 +27,13 @@ cd guess-the-number-nasm
 4. Соберите программу
 Для 32-битной версии:
 ```bash
-nasm -f win32 guess.asm -o guess.obj
-gcc guess.obj -o guess32.exe -m32
+nasm -f win32 main.asm -o main.obj
+gcc main.obj -o guess32.exe -m32
 ```
 Для 64-битной версии:
 ```bash
-nasm -f win64 guess.asm -o guess.obj
-gcc guess.obj -o guess64.exe
+nasm -f win64 main.asm -o main.obj
+gcc main.obj -o guess64.exe
 ```
 Запуск программы
 После сборки запустите исполняемый файл:
